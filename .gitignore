@@ -1,2 +1,4 @@
 .tmp
 *.env
+__pycache__
+.idea
