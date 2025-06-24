@@ -1,0 +1,11 @@
+[project]
+name = "mcp-fetch-xhs-post"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.9.4",
+    "tenacity>=9.1.2",
+    "drissionpage>=4.1.0.18",
+]
