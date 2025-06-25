@@ -37,6 +37,8 @@ DINGTALK_SECRET=YOUR_SECRET
 ```shell
 # 若未安装uv，可通过pip等方式安装
 cd mcp_fetch_xhs_post
+source .venv/Scripts/activate # 激活venv。若是windows cmd环境，则执行 .\.venv\Scripts\activate.bat 
+
 uv sync
 ```
 
@@ -58,7 +60,7 @@ uv run main.py
 
 项目启动且成功添加到MCP Client后，就可以开始使用了。
 
-第一次运行时，由于本地的Chrome浏览器可以没有登录小红书PC网站，程序会自动将用于登录的二维码发送至钉钉群中，
+第一次运行时，由于本地的Chrome浏览器可能没有登录小红书PC网站，程序会自动将用于登录的二维码发送至钉钉群中，
 请进入钉钉群扫码登陆，程序将会等待30s，如超时工具会自动重试最多3次。登陆成功后，程序也会将登陆成功的消息发送至钉钉群中。
 之后会开始获取数据，在启动项目的控制台输出中可以看到运行日志打印。
 
